@@ -56,28 +56,47 @@
         </div>
     </section>
 
-    <section id="about" class="py-16 bg-white">
-        <div class="container mx-auto px-4 max-w-5xl">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-brandDark mb-4">Welcome to World Network Solutions</h2>
-                <p class="text-slate-600 max-w-3xl mx-auto">
-                    We focus on delivering reliable, scalable, and cost-effective solutions to help organizations build and maintain efficient communication networks. Committed to providing high-quality networking and IT services, our experienced team ensures seamless connectivity and operational excellence.
-                </p>
-            </div>
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-8">
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-brandDark mb-4 tracking-tight">Welcome to World Network Solutions</h2>
+                        <p class="text-slate-600 leading-relaxed">
+                            We focus on delivering reliable, scalable, and cost-effective solutions to help organizations build and maintain efficient communication networks. Committed to providing high-quality networking and IT services, our experienced team ensures seamless connectivity and operational excellence.
+                        </p>
+                    </div>
 
-            <div class="grid md:grid-cols-2 gap-8 mt-12">
-                <div class="bg-slate-50 p-8 rounded-xl border-l-4 border-brandCyan shadow-sm">
-                    <h3 class="text-xl font-bold text-brandDark mb-3 flex items-center">
-                        <span class="bg-cyan-100 text-brandCyan p-2 rounded-lg mr-3">🎯</span> Our Mission
-                    </h3>
-                    <p class="text-slate-600">To provide innovative and dependable networking solutions that empower businesses with robust communication and IT infrastructure.</p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-slate-50 p-6 rounded-xl border-l-4 border-brandCyan shadow-sm hover:shadow-md transition-shadow">
+                            <h3 class="text-lg font-bold text-brandDark mb-3 flex items-center">
+                                <span class="bg-cyan-100 text-brandCyan p-2 rounded-lg mr-3">🎯</span> Our Mission
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">To provide innovative and dependable networking solutions that empower businesses with robust communication and IT infrastructure.</p>
+                        </div>
+                        <div class="bg-slate-50 p-6 rounded-xl border-l-4 border-brandBlue shadow-sm hover:shadow-md transition-shadow">
+                            <h3 class="text-lg font-bold text-brandDark mb-3 flex items-center">
+                                <span class="bg-blue-100 text-brandBlue p-2 rounded-lg mr-3">👁️</span> Our Vision
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">To become a trusted technology partner for organizations seeking reliable networking and telecom solutions.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-xl border-l-4 border-brandBlue shadow-sm">
-                    <h3 class="text-xl font-bold text-brandDark mb-3 flex items-center">
-                        <span class="bg-blue-100 text-brandBlue p-2 rounded-lg mr-3">👁️</span> Our Vision
-                    </h3>
-                    <p class="text-slate-600">To become a trusted technology partner for organizations seeking reliable networking and telecom solutions.</p>
+
+                <div class="lg:col-span-5 relative">
+                    <div class="absolute inset-0 bg-brandCyan rounded-2xl transform rotate-3 scale-102 opacity-10 z-0"></div>
+                    <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?q=80&w=800" alt="High-Speed Cyber Infrastructure" class="relative z-10 w-full h-80 lg:h-[450px] object-cover rounded-2xl shadow-xl border-4 border-slate-50">
+                    
+                    <div class="absolute -bottom-4 -left-4 z-20 bg-brandDark text-white px-5 py-3 rounded-xl shadow-lg border border-slate-800 flex items-center space-x-3">
+                        <span class="flex h-3 w-3 relative">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brandCyan opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-brandCyan"></span>
+                        </span>
+                        <span class="text-xs font-semibold tracking-wider uppercase">Enterprise Grade</span>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -200,7 +219,6 @@
 
                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
                     <h4 class="text-lg font-bold mb-4 text-white">Quick Inquiry</h4>
-                    
                     <form action="mailto:prashant@worldnetworksolutions.in" method="GET" enctype="text/plain" class="space-y-4">
                         <div>
                             <label class="block text-xs uppercase font-bold tracking-wider text-slate-400 mb-1">Name</label>
