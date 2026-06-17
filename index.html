@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Network Solutions | Reliable Networking & IT Infrastructure</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -22,11 +21,9 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans">
 
-    <!-- Header / Navbar -->
     <header class="sticky top-0 z-50 bg-brandDark text-white shadow-md">
         <div class="container mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center">
             <div class="flex items-center space-x-3 mb-4 sm:mb-0">
-                <!-- Logo File -->
                 <img src="wns%20logo.png" alt="World Network Solutions Logo" class="h-12 w-auto object-contain">
                 <span class="text-xl font-bold tracking-tight text-white">World Network <span class="text-brandCyan">Solutions</span></span>
             </div>
@@ -39,16 +36,12 @@
         </div>
     </header>
 
-    <!-- Hero Section (With Professional Networking Background Photo) -->
     <section id="home" class="relative bg-brandDark text-white py-24 lg:py-36 overflow-hidden">
-        <!-- Background Image Layer with Dark Overlay for Text Readability -->
         <div class="absolute inset-0 z-0 opacity-25">
             <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1920" alt="Enterprise Network Switches" class="w-full h-full object-cover">
         </div>
-        <!-- Gradient Shade Layer -->
         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-brandDark opacity-80 z-0"></div>
 
-        <!-- Hero Content -->
         <div class="container mx-auto px-4 text-center max-w-4xl relative z-10">
             <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
                 Reliable Networking & <span class="text-brandCyan">IT Infrastructure</span> Solutions
@@ -63,7 +56,6 @@
         </div>
     </section>
 
-    <!-- Welcome & About Section -->
     <section id="about" class="py-16 bg-white">
         <div class="container mx-auto px-4 max-w-5xl">
             <div class="text-center mb-12">
@@ -73,7 +65,6 @@
                 </p>
             </div>
 
-            <!-- Mission & Vision Grid -->
             <div class="grid md:grid-cols-2 gap-8 mt-12">
                 <div class="bg-slate-50 p-8 rounded-xl border-l-4 border-brandCyan shadow-sm">
                     <h3 class="text-xl font-bold text-brandDark mb-3 flex items-center">
@@ -91,13 +82,11 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="py-16 bg-slate-100">
         <div class="container mx-auto px-4 max-w-6xl">
             <h2 class="text-3xl font-bold text-center text-brandDark mb-12">Our Core Services</h2>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Service 1 -->
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                     <div class="text-3xl mb-4">🌐</div>
                     <h3 class="text-lg font-bold text-brandDark mb-3">Network Infrastructure</h3>
@@ -109,7 +98,6 @@
                     </ul>
                 </div>
 
-                <!-- Service 2 -->
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                     <div class="text-3xl mb-4">📹</div>
                     <h3 class="text-lg font-bold text-brandDark mb-3">Smart Surveillance</h3>
@@ -121,7 +109,6 @@
                     </ul>
                 </div>
 
-                <!-- Service 3 -->
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                     <div class="text-3xl mb-4">🖥️</div>
                     <h3 class="text-lg font-bold text-brandDark mb-3">Server & IT Services</h3>
@@ -133,7 +120,6 @@
                     </ul>
                 </div>
 
-                <!-- Service 4 -->
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                     <div class="text-3xl mb-4">📶</div>
                     <h3 class="text-lg font-bold text-brandDark mb-3">Wireless Solutions</h3>
@@ -148,7 +134,6 @@
         </div>
     </section>
 
-    <!-- Why Choose Us Section -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4 max-w-4xl text-center">
             <h2 class="text-3xl font-bold text-brandDark mb-10">Why Choose Us</h2>
@@ -177,13 +162,11 @@
         </div>
     </section>
 
-    <!-- Contact Us Section -->
     <section id="contact" class="py-16 bg-brandDark text-white">
         <div class="container mx-auto px-4 max-w-5xl">
             <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
             
             <div class="grid md:grid-cols-2 gap-12">
-                <!-- Info Side -->
                 <div class="space-y-6">
                     <h3 class="text-xl font-bold text-brandCyan">World Network Solutions</h3>
                     <p class="text-slate-300">Get in touch with us for enterprise-grade infrastructure requirements or quick support consultations.</p>
@@ -215,27 +198,21 @@
                     </div>
                 </div>
 
-                <!-- Quick Inquiry Form Component (Web3Forms Direct Routing) -->
                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
                     <h4 class="text-lg font-bold mb-4 text-white">Quick Inquiry</h4>
-                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
-                        
-                        <!-- Free Public Key for immediate delivery directly to your main domain box -->
-                        <input type="hidden" name="access_key" value="005df82e-9828-44fb-8ea8-99901fc1ca98">
-                        <input type="hidden" name="subject" value="New Inquiry from WNS Website">
-                        <input type="hidden" name="replyto" value="prashant@worldnetworksolutions.in">
-
+                    
+                    <form action="mailto:prashant@worldnetworksolutions.in" method="GET" enctype="text/plain" class="space-y-4">
                         <div>
                             <label class="block text-xs uppercase font-bold tracking-wider text-slate-400 mb-1">Name</label>
-                            <input type="text" name="Name" placeholder="Your Name" required class="w-full p-2.5 rounded bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-brandCyan text-sm">
+                            <input type="text" name="Client Name" placeholder="Your Name" required class="w-full p-2.5 rounded bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-brandCyan text-sm">
                         </div>
                         <div>
                             <label class="block text-xs uppercase font-bold tracking-wider text-slate-400 mb-1">Mobile / Email</label>
-                            <input type="text" name="Contact_Info" placeholder="Your Contact Info" required class="w-full p-2.5 rounded bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-brandCyan text-sm">
+                            <input type="text" name="Contact Details" placeholder="Your Contact Info" required class="w-full p-2.5 rounded bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-brandCyan text-sm">
                         </div>
                         <div>
                             <label class="block text-xs uppercase font-bold tracking-wider text-slate-400 mb-1">Requirement</label>
-                            <textarea name="Requirement" rows="3" placeholder="How can we help you?" required class="w-full p-2.5 rounded bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-brandCyan text-sm"></textarea>
+                            <textarea name="Project Requirements" rows="3" placeholder="How can we help you?" required class="w-full p-2.5 rounded bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-brandCyan text-sm"></textarea>
                         </div>
                         <button type="submit" class="w-full bg-brandCyan hover:bg-cyan-500 text-brandDark font-bold py-2 rounded transition-colors text-sm">Send Message</button>
                     </form>
@@ -244,7 +221,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-slate-950 text-slate-500 text-center py-6 border-t border-slate-900 text-xs">
         <div class="container mx-auto px-4">
             &copy; 2026 World Network Solutions. All Rights Reserved. | Designed for worldnetworksolutions.in
