@@ -26,7 +26,7 @@
     <header class="sticky top-0 z-50 bg-brandDark text-white shadow-md">
         <div class="container mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center">
             <div class="flex items-center space-x-3 mb-4 sm:mb-0">
-                <!-- Yahan aapka wns logo image file lag gaya hai -->
+                <!-- Logo File -->
                 <img src="wns%20logo.png" alt="World Network Solutions Logo" class="h-12 w-auto object-contain">
                 <span class="text-xl font-bold tracking-tight text-white">World Network <span class="text-brandCyan">Solutions</span></span>
             </div>
@@ -39,9 +39,17 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="bg-gradient-to-r from-brandDark to-slate-900 text-white py-20 lg:py-32">
-        <div class="container mx-auto px-4 text-center max-w-4xl">
+    <!-- Hero Section (With Professional Networking Background Photo) -->
+    <section id="home" class="relative bg-brandDark text-white py-24 lg:py-36 overflow-hidden">
+        <!-- Background Image Layer with Dark Overlay for Text Readability -->
+        <div class="absolute inset-0 z-0 opacity-25">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1920" alt="Enterprise Network Switches" class="w-full h-full object-cover">
+        </div>
+        <!-- Gradient Shade Layer -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-brandDark opacity-80 z-0"></div>
+
+        <!-- Hero Content -->
+        <div class="container mx-auto px-4 text-center max-w-4xl relative z-10">
             <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
                 Reliable Networking & <span class="text-brandCyan">IT Infrastructure</span> Solutions
             </h1>
@@ -207,10 +215,16 @@
                     </div>
                 </div>
 
-                <!-- Quick Inquiry Form Component (Email Activated) -->
+                <!-- Quick Inquiry Form Component (Web3Forms Direct Routing) -->
                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
                     <h4 class="text-lg font-bold mb-4 text-white">Quick Inquiry</h4>
-                    <form action="https://formspree.io/f/moqgqywd" method="POST" class="space-y-4">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                        
+                        <!-- Free Public Key for immediate delivery directly to your main domain box -->
+                        <input type="hidden" name="access_key" value="005df82e-9828-44fb-8ea8-99901fc1ca98">
+                        <input type="hidden" name="subject" value="New Inquiry from WNS Website">
+                        <input type="hidden" name="replyto" value="prashant@worldnetworksolutions.in">
+
                         <div>
                             <label class="block text-xs uppercase font-bold tracking-wider text-slate-400 mb-1">Name</label>
                             <input type="text" name="Name" placeholder="Your Name" required class="w-full p-2.5 rounded bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-brandCyan text-sm">
