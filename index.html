@@ -207,21 +207,21 @@
                     </div>
                 </div>
 
-                <!-- Quick Inquiry Form Component -->
+                <!-- Quick Inquiry Form Component (Email Activated) -->
                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
                     <h4 class="text-lg font-bold mb-4 text-white">Quick Inquiry</h4>
-                    <form action="#" onsubmit="alert('Thank you for your inquiry! This is a demo form.'); return false;" class="space-y-4">
+                    <form action="https://formspree.io/f/moqgqywd" method="POST" class="space-y-4">
                         <div>
                             <label class="block text-xs uppercase font-bold tracking-wider text-slate-400 mb-1">Name</label>
-                            <input type="text" placeholder="Your Name" class="w-full p-2.5 rounded bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-brandCyan text-sm">
+                            <input type="text" name="Name" placeholder="Your Name" required class="w-full p-2.5 rounded bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-brandCyan text-sm">
                         </div>
                         <div>
                             <label class="block text-xs uppercase font-bold tracking-wider text-slate-400 mb-1">Mobile / Email</label>
-                            <input type="text" placeholder="Your Contact Info" class="w-full p-2.5 rounded bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-brandCyan text-sm">
+                            <input type="text" name="Contact_Info" placeholder="Your Contact Info" required class="w-full p-2.5 rounded bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-brandCyan text-sm">
                         </div>
                         <div>
                             <label class="block text-xs uppercase font-bold tracking-wider text-slate-400 mb-1">Requirement</label>
-                            <textarea rows="3" placeholder="How can we help you?" class="w-full p-2.5 rounded bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-brandCyan text-sm"></textarea>
+                            <textarea name="Requirement" rows="3" placeholder="How can we help you?" required class="w-full p-2.5 rounded bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-brandCyan text-sm"></textarea>
                         </div>
                         <button type="submit" class="w-full bg-brandCyan hover:bg-cyan-500 text-brandDark font-bold py-2 rounded transition-colors text-sm">Send Message</button>
                     </form>
