@@ -27,7 +27,7 @@
         <div class="container mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center">
             <div class="flex items-center space-x-3 mb-4 sm:mb-0">
                 <!-- Logo File -->
-                <img src="wns%20logo.png" alt="World Network Solutions Logo" class="h-12 w-auto object-contain">
+                <img src="wns logo.png" alt="World Network Solutions Logo" class="h-12 w-auto object-contain">
                 <span class="text-xl font-bold tracking-tight text-white">World Network <span class="text-brandCyan">Solutions</span></span>
             </div>
             <nav class="flex space-x-6 text-sm font-medium">
@@ -68,7 +68,7 @@
         <div class="container mx-auto px-4 max-w-6xl">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Left Side (6 Columns): Text Content and Mission/Vision Grid -->
+                <!-- Left Side (7 Columns): Text Content and Mission/Vision Grid -->
                 <div class="lg:col-span-7 space-y-8">
                     <div>
                         <h2 class="text-3xl font-extrabold text-brandDark mb-4 tracking-tight">Welcome to World Network Solutions</h2>
@@ -94,10 +94,11 @@
                     </div>
                 </div>
 
-                <!-- Right Side (5 Columns): Premium High-Tech Enterprise Network Photo Component -->
+                <!-- Right Side (5 Columns): Premium Corporate Data Center Image -->
                 <div class="lg:col-span-5 relative">
                     <div class="absolute inset-0 bg-brandCyan rounded-2xl transform rotate-3 scale-102 opacity-10 z-0"></div>
-                    <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?q=80&w=800" alt="High-Speed Cyber Infrastructure" class="relative z-10 w-full h-80 lg:h-[450px] object-cover rounded-2xl shadow-xl border-4 border-slate-50">
+                    <!-- High-tech, clean enterprise server network photo -->
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=800" alt="Enterprise Data Center Infrastructure" class="relative z-10 w-full h-80 lg:h-[450px] object-cover rounded-2xl shadow-xl border-4 border-slate-50">
                     
                     <!-- Decorative Floating Tech Badge -->
                     <div class="absolute -bottom-4 -left-4 z-20 bg-brandDark text-white px-5 py-3 rounded-xl shadow-lg border border-slate-800 flex items-center space-x-3">
@@ -215,7 +216,7 @@
                             <span class="text-xl">📍</span>
                             <div>
                                 <strong class="text-white block mb-1">Our Address:</strong>
-                                S-13, Second Floor, MCD No. 252, <br>
+                                S-13, Second Floor, Nazar Singh Place 252, <br>
                                 Sant Nagar, East of Kailash, <br>
                                 New Delhi – 110065
                             </div>
@@ -237,17 +238,18 @@
                     </div>
                 </div>
 
-                <!-- Quick Inquiry Form Component (Direct Secure Routing) -->
+                <!-- Quick Inquiry Form Component -->
                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
                     <h4 class="text-lg font-bold mb-4 text-white">Quick Inquiry</h4>
                     
-                    <!-- Form actions completely decoupled from system clients -->
                     <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
                         
-                        <!-- Secure Token integrated to push data straight to prashant@worldnetworksolutions.in -->
+                        <!-- Secure Token to route data straight to prashant@worldnetworksolutions.in -->
                         <input type="hidden" name="access_key" value="95209798-2b8e-4963-bfa4-0e3a628ef31d">
                         <input type="hidden" name="subject" value="WNS Web Portal - New Infrastructure Inquiry">
                         <input type="hidden" name="from_name" value="WNS Automation System">
+                        <!-- Redirects user nicely after a successful submission -->
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
                         <div>
                             <label class="block text-xs uppercase font-bold tracking-wider text-slate-400 mb-1">Name</label>
