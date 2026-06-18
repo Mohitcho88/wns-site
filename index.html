@@ -97,7 +97,6 @@
                 <!-- Right Side (5 Columns): Premium Corporate Data Center Image -->
                 <div class="lg:col-span-5 relative">
                     <div class="absolute inset-0 bg-brandCyan rounded-2xl transform rotate-3 scale-102 opacity-10 z-0"></div>
-                    <!-- High-tech, clean enterprise server network photo -->
                     <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=800" alt="Enterprise Data Center Infrastructure" class="relative z-10 w-full h-80 lg:h-[450px] object-cover rounded-2xl shadow-xl border-4 border-slate-50">
                     
                     <!-- Decorative Floating Tech Badge -->
@@ -242,14 +241,12 @@
                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
                     <h4 class="text-lg font-bold mb-4 text-white">Quick Inquiry</h4>
                     
-                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                    <form id="inquiryForm" class="space-y-4">
                         
-                        <!-- Secure Token to route data straight to prashant@worldnetworksolutions.in -->
+                        <!-- ⚠️ APNI NEW WEB3FORMS ACCESS KEY IS VALUE KE ANDAR PASTE KAREIN -->
                         <input type="hidden" name="access_key" value="95209798-2b8e-4963-bfa4-0e3a628ef31d">
                         <input type="hidden" name="subject" value="WNS Web Portal - New Infrastructure Inquiry">
                         <input type="hidden" name="from_name" value="WNS Automation System">
-                        <!-- Redirects user nicely after a successful submission -->
-                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
                         <div>
                             <label class="block text-xs uppercase font-bold tracking-wider text-slate-400 mb-1">Name</label>
@@ -263,7 +260,10 @@
                             <label class="block text-xs uppercase font-bold tracking-wider text-slate-400 mb-1">Requirement</label>
                             <textarea name="Project_Details" rows="3" placeholder="How can we help you?" required class="w-full p-2.5 rounded bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-brandCyan text-sm"></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-brandCyan hover:bg-cyan-500 text-brandDark font-bold py-2 rounded transition-colors text-sm">Send Message</button>
+                        <button type="submit" id="submitBtn" class="w-full bg-brandCyan hover:bg-cyan-500 text-brandDark font-bold py-2 rounded transition-colors text-sm">Send Message</button>
+                        
+                        <!-- Status Notification Area -->
+                        <div id="formStatus" class="text-sm font-semibold text-center mt-2 hidden"></div>
                     </form>
                 </div>
             </div>
@@ -276,6 +276,62 @@
             &copy; 2026 World Network Solutions. All Rights Reserved. | Designed for worldnetworksolutions.in
         </div>
     </footer>
+
+    <!-- JavaScript to Handle Silent AJAX Form Submission -->
+    <script>
+        document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const btn = document.getElementById('submitBtn');
+            const statusDiv = document.getElementById('formStatus');
+            
+            // UI Feedback: Disable button & show loading state
+            btn.disabled = true;
+            btn.innerText = "Sending...";
+            statusDiv.classList.remove('hidden', 'text-green-400', 'text-red-400');
+            statusDiv.classList.add('text-slate-300');
+            statusDiv.innerText = "Processing your request...";
+
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let res = await response.json();
+                if (response.status == 200) {
+                    statusDiv.classList.remove('text-slate-300');
+                    statusDiv.classList.add('text-green-400');
+                    statusDiv.innerText = "Message sent successfully! 👍";
+                    form.reset(); // Clear input fields
+                } else {
+                    console.log(response);
+                    statusDiv.classList.remove('text-slate-300');
+                    statusDiv.classList.add('text-red-400');
+                    statusDiv.innerText = res.message || "Submission failed. Please check Access Key!";
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                statusDiv.classList.remove('text-slate-300');
+                statusDiv.classList.add('text-red-400');
+                statusDiv.innerText = "Network error. Please try again later.";
+            })
+            .then(() => {
+                // Reset button execution state
+                btn.disabled = false;
+                btn.innerText = "Send Message";
+            });
+        });
+    </script>
 
 </body>
 </html>
