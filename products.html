@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enterprise Products & Trading Catalogue | World Network Solutions</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -21,6 +22,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans">
 
+    <!-- Header / Navbar -->
     <header class="sticky top-0 z-50 bg-brandDark text-white shadow-md">
         <div class="container mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center">
             <div class="flex items-center space-x-3 mb-4 sm:mb-0">
@@ -37,6 +39,7 @@
         </div>
     </header>
 
+    <!-- Sub-Hero Section -->
     <section class="bg-gradient-to-r from-brandDark to-slate-900 text-white py-12 border-b border-slate-800">
         <div class="container mx-auto px-4 text-center">
             <span class="text-xs font-bold uppercase tracking-widest text-brandCyan bg-cyan-950/60 px-3 py-1 rounded-full border border-brandCyan/20">B2B Hardware Trading & Supply</span>
@@ -45,160 +48,441 @@
         </div>
     </section>
 
+    <!-- Main Brands Products Grid Section -->
     <main class="container mx-auto px-4 py-16 max-w-6xl">
-        <div class="space-y-16">
+        <div class="space-y-20">
 
+            <!-- BRAND 1: MIKROTIK (9 Products) -->
             <div>
-                <div class="flex items-center space-x-3 mb-6 border-b pb-3 border-slate-200">
+                <div class="flex items-center space-x-3 mb-8 border-b pb-3 border-slate-200">
                     <span class="text-2xl font-bold text-brandDark">⚡ MikroTik</span>
-                    <span class="text-xs text-slate-500 bg-slate-200/60 px-2.5 py-0.5 rounded-full font-medium">Core Routing & Switching Nodes</span>
+                    <span class="text-xs text-slate-500 bg-slate-200/60 px-2.5 py-0.5 rounded-full font-medium">Core Routing & Switching Stack</span>
                 </div>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Prod 1 -->
                     <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=400" alt="MikroTik CCR2216-1G-12XS-2XQ" class="w-full h-44 object-cover">
+                        <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=400" alt="CCR2216-1G-12XS-2XQ" class="w-full h-44 object-contain p-4 bg-slate-100">
                         <div class="p-4 flex-1 flex flex-col justify-between">
                             <div>
-                                <h3 class="font-bold text-brandDark text-base">CCR2216-1G-12XS-2XQ</h3>
-                                <p class="text-xs text-slate-500 mt-1">Flagship 100G Cloud Core Router powered by an exceptional AL73152 16-core CPU, engineered for high-density internet exchange ports and massive data pipelines.</p>
+                                <h3 class="font-bold text-brandDark text-sm">CCR2216-1G-12XS-2XQ</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Flagship 100G Cloud Core Router with 16-core CPU. Built for high-density core ISP networks and large enterprise routing pipelines.</p>
                             </div>
-                            <a href="index.html#contact" class="w-full block text-center mt-4 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-2 rounded transition-colors">Request Quote / Inquiry</a>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
                         </div>
                     </div>
+                    <!-- Prod 2 -->
                     <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=400" alt="MikroTik CRS354-48G-4S+2Q+RM" class="w-full h-44 object-cover">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=400" alt="CRS354-48G-4S+2Q+RM" class="w-full h-44 object-contain p-4 bg-slate-100">
                         <div class="p-4 flex-1 flex flex-col justify-between">
                             <div>
-                                <h3 class="font-bold text-brandDark text-base">CRS354-48G-4S+2Q+RM</h3>
-                                <p class="text-xs text-slate-500 mt-1">High-performance 48-Port Gigabit switch rackmount setup featuring 4x 10G SFP+ ports and 2x 40G QSFP+ links for ultra-fast backbone distribution rings.</p>
+                                <h3 class="font-bold text-brandDark text-sm">CRS354-48G-4S+2Q+RM</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Heavy-duty 48-port Gigabit rackmount switch featuring 4x 10G SFP+ ports and 2x 40G QSFP+ links for lightning-fast network ring distribution.</p>
                             </div>
-                            <a href="index.html#contact" class="w-full block text-center mt-4 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-2 rounded transition-colors">Request Quote / Inquiry</a>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
                         </div>
                     </div>
+                    <!-- Prod 3 -->
                     <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-                        <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=400" alt="MikroTik RB5009UG+S+IN" class="w-full h-44 object-cover">
+                        <img src="https://images.unsplash.com/photo-1601524909162-be87252be298?q=80&w=400" alt="RB5009UG+S+IN" class="w-full h-44 object-contain p-4 bg-slate-100">
                         <div class="p-4 flex-1 flex flex-col justify-between">
                             <div>
-                                <h3 class="font-bold text-brandDark text-base">RB5009UG+S+IN</h3>
-                                <p class="text-xs text-slate-500 mt-1">Heavy-duty compact laboratory and edge router node with full 2.5G Ethernet capability, 10G SFP+ alignment, and powerful quad-core computational infrastructure.</p>
+                                <h3 class="font-bold text-brandDark text-sm">RB5009UG+S+IN</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Compact edge router node with 2.5G Ethernet capability, 10G SFP+ alignment, and powerful quad-core compute structure for corporate setups.</p>
                             </div>
-                            <a href="index.html#contact" class="w-full block text-center mt-4 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-2 rounded transition-colors">Request Quote / Inquiry</a>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 4 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=400" alt="CCR2004-16G-2S+" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">CCR2004-16G-2S+</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">High-performance router equipped with 16x Gigabit ports and 2x 10G SFP+ cages, perfect for mid-scale server connectivity projects.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 5 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?q=80&w=400" alt="CRS326-24G-2S+RM" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">CRS326-24G-2S+RM</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Affordable 24-Port Gigabit switch with wire-speed connectivity, 2x SFP+ ports, rackmount casing, and Dual Boot (RouterOS/SwitchOS) layout.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 6 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1591405351990-4726e331f121?q=80&w=400" alt="hEX gr3" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">hEX (RB750Gr3)</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Compact 5-port Gigabit SOHO router node supporting hardware encryption, excellent for smart surveillance network separations.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 7 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=400" alt="CRS317-1G-16S+RM" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">CRS317-1G-16S+RM</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Enterprise-grade 16-port SFP+ Layer 3 aggregate switch node providing hardware-level performance with dual redundant power grids.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 8 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1601524909162-be87252be298?q=80&w=400" alt="CCR2116-12G-4S+" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">CCR2116-12G-4S+</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Powerful core router built with a 16-core Amazon Annapurna Labs processor, engineered to completely dominate heavy infrastructure bottlenecks.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 9 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=400" alt="NetMetal 5" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">NetMetal 5 (RB922UAGS-5HPacD)</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Rugged waterproof metal enclosure outdoor wireless client node with super-high RF output, perfect for intensive point-to-point applications.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- BRAND 2: UBIQUITI & MIMOSA (9 Products) -->
             <div>
-                <div class="flex items-center space-x-3 mb-6 border-b pb-3 border-slate-200">
+                <div class="flex items-center space-x-3 mb-8 border-b pb-3 border-slate-200">
                     <span class="text-2xl font-bold text-brandDark">📶 Ubiquiti & Mimosa</span>
-                    <span class="text-xs text-slate-500 bg-slate-200/60 px-2.5 py-0.5 rounded-full font-medium">Enterprise Wireless & PtP Backhaul</span>
+                    <span class="text-xs text-slate-500 bg-slate-200/60 px-2.5 py-0.5 rounded-full font-medium">Enterprise Wireless & Advanced C6x Backhauls</span>
                 </div>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Prod 1 (Upgraded Mimosa C6x) -->
                     <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-                        <img src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?q=80&w=400" alt="Ubiquiti UniFi U6 Enterprise" class="w-full h-44 object-cover">
+                        <img src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?q=80&w=400" alt="Mimosa C6x PtP" class="w-full h-44 object-contain p-4 bg-slate-100">
                         <div class="p-4 flex-1 flex flex-col justify-between">
                             <div>
-                                <h3 class="font-bold text-brandDark text-base">UniFi U6 Enterprise AP</h3>
-                                <p class="text-xs text-slate-500 mt-1">High-density Wi-Fi 6E ceiling-mounted access point node, optimizing massive 6 GHz bandwidth configurations for premium commercial workspaces.</p>
+                                <h3 class="font-bold text-brandDark text-sm">Mimosa C6x (New Generation PtP)</h3>
+                                <p class="text-[11px] text-slate-500 mt-1"><span class="text-green-600 font-bold">Latest Replacement:</span> Ultra-high speed PtP/PtMP node operating on Wi-Fi 6E architecture, supplying multi-gigabit throughput rates.</p>
                             </div>
-                            <a href="index.html#contact" class="w-full block text-center mt-4 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-2 rounded transition-colors">Request Quote / Inquiry</a>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
                         </div>
                     </div>
+                    <!-- Prod 2 -->
                     <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-                        <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?q=80&w=400" alt="Mimosa B5c Point-to-Point" class="w-full h-44 object-cover">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=400" alt="UniFi U6 Enterprise AP" class="w-full h-44 object-contain p-4 bg-slate-100">
                         <div class="p-4 flex-1 flex flex-col justify-between">
                             <div>
-                                <h3 class="font-bold text-brandDark text-base">Mimosa B5c Connectorized</h3>
-                                <p class="text-xs text-slate-500 mt-1">Industry-standard 5 GHz carrier-grade point-to-point wireless backhaul link capable of delivering multi-gigabit throughput across extensive terrain grids.</p>
+                                <h3 class="font-bold text-brandDark text-sm">UniFi U6 Enterprise AP</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">High-density Wi-Fi 6E ceiling-mounted access point node, optimizing massive 6 GHz bandwidth arrays for premium corporate offices.</p>
                             </div>
-                            <a href="index.html#contact" class="w-full block text-center mt-4 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-2 rounded transition-colors">Request Quote / Inquiry</a>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
                         </div>
                     </div>
+                    <!-- Prod 3 -->
                     <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=400" alt="Mimosa MMP Linux Server node" class="w-full h-44 object-cover">
+                        <img src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8b?q=80&w=400" alt="Mimosa MMP" class="w-full h-44 object-contain p-4 bg-slate-100">
                         <div class="p-4 flex-1 flex flex-col justify-between">
                             <div>
-                                <h3 class="font-bold text-brandDark text-base">Mimosa MMP Management Server Unit</h3>
-                                <p class="text-xs text-slate-500 mt-1">Dedicated cloud-integrated controller node supporting absolute firmware configurations, network auditing, and massive RF tracking alignments.</p>
+                                <h3 class="font-bold text-brandDark text-sm">Mimosa MMP Management Controller</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Dedicated cloud-integrated network analytics controller for centralized RF tuning, wireless alignment management and auditing.</p>
                             </div>
-                            <a href="index.html#contact" class="w-full block text-center mt-4 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-2 rounded transition-colors">Request Quote / Inquiry</a>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 4 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=400" alt="Ubiquiti Rocket 5AC Lite" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">Ubiquiti Rocket 5AC Lite</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">High-bandwidth outdoor radio node covering the full 5GHz spectrum, leveraging airMAX AC technology for long-distance point backhauls.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 5 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1562408590-e32931084e23?q=80&w=400" alt="UniFi Switch Pro 24 PoE" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">UniFi Switch Pro 24 PoE</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Layer 3 corporate network switch with 24x PoE+ ports and 10G SFP+ uplinks, perfectly matched to feed smart IP camera infrastructure systems.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 6 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=400" alt="Mimosa B24 Wireless Link" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">Mimosa B24 24GHz Backhaul</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">License-free ultra-fast short range 24GHz spectrum link supplying up to 1.5 Gbps aggregated bandwidth with minimal latency grid paths.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 7 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?q=80&w=400" alt="UniFi U6 Pro AP" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">UniFi U6 Pro Access Point</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Dual-band Wi-Fi 6 access point node delivering an aggregated 5.3 Gbps transmission pace, engineered for concurrent corporate users.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 8 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=400" alt="Ubiquiti airFiber 5XHD" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">Ubiquiti airFiber 5XHD</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">State-of-the-art custom LTU processor wireless engine delivering extreme spectral efficiency parameters for heavy enterprise networks.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 9 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8b?q=80&w=400" alt="Mimosa A5x" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">Mimosa A5x Access Node</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Connectorized multi-client PTMP sector delivery node with excellent noise-isolation structures, engineered to handle crowded spaces.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- BRAND 3: GRANDSTREAM (9 Products) -->
             <div>
-                <div class="flex items-center space-x-3 mb-6 border-b pb-3 border-slate-200">
+                <div class="flex items-center space-x-3 mb-8 border-b pb-3 border-slate-200">
                     <span class="text-2xl font-bold text-brandDark">☎️ Grandstream</span>
                     <span class="text-xs text-slate-500 bg-slate-200/60 px-2.5 py-0.5 rounded-full font-medium">Unified Corporate Voice & SIP Systems</span>
                 </div>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Prod 1 -->
                     <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-                        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=400" alt="Grandstream GRP2615 IP Phone" class="w-full h-44 object-cover">
+                        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=400" alt="GRP2615 IP Phone" class="w-full h-44 object-contain p-4 bg-slate-100">
                         <div class="p-4 flex-1 flex flex-col justify-between">
                             <div>
-                                <h3 class="font-bold text-brandDark text-base">GRP2615 Carrier-Grade IP Phone</h3>
-                                <p class="text-xs text-slate-500 mt-1">Premium 10-line executive IP communications set featuring built-in dual-band Wi-Fi routing, integrated Bluetooth connection, and smart digital keys map.</p>
+                                <h3 class="font-bold text-brandDark text-sm">GRP2615 Carrier-Grade IP Phone</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Premium 10-line executive IP desk phone. Features integrated dual-band Wi-Fi routing, native Bluetooth support, and clean digital keys display map.</p>
                             </div>
-                            <a href="index.html#contact" class="w-full block text-center mt-4 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-2 rounded transition-colors">Request Quote / Inquiry</a>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
                         </div>
                     </div>
+                    <!-- Prod 2 -->
                     <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-                        <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=400" alt="Grandstream UCM6302 IP PBX" class="w-full h-44 object-cover">
+                        <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=400" alt="UCM6302 IP PBX" class="w-full h-44 object-contain p-4 bg-slate-100">
                         <div class="p-4 flex-1 flex flex-col justify-between">
                             <div>
-                                <h3 class="font-bold text-brandDark text-base">UCM6302 IP PBX Appliance</h3>
-                                <p class="text-xs text-slate-500 mt-1">High-end unified communications SIP platform allowing large corporate setups to manage voice, video calling, data infrastructure, and intercom security.</p>
+                                <h3 class="font-bold text-brandDark text-sm">UCM6302 IP PBX Appliance</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">High-end unified corporate communication server box managing corporate voice trunks, localized video calling grids, and secure SIP accounts configuration.</p>
                             </div>
-                            <a href="index.html#contact" class="w-full block text-center mt-4 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-2 rounded transition-colors">Request Quote / Inquiry</a>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
                         </div>
                     </div>
+                    <!-- Prod 3 -->
                     <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=400" alt="Grandstream GSC3516 Intercom" class="w-full h-44 object-cover">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=400" alt="GSC3516 Multicast Speaker" class="w-full h-44 object-contain p-4 bg-slate-100">
                         <div class="p-4 flex-1 flex flex-col justify-between">
                             <div>
-                                <h3 class="font-bold text-brandDark text-base">GSC3516 SIP Multicast Speaker</h3>
-                                <p class="text-xs text-slate-500 mt-1">Enterprise-grade ceiling-mounted IP speaker array featuring integrated multi-channel microphones and dual-frequency connectivity.</p>
+                                <h3 class="font-bold text-brandDark text-sm">GSC3516 SIP Multicast Speaker</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Ceiling-mounted enterprise IP speaker system with multi-channel integrated mic arrays, designed for mass corporate paging installations.</p>
                             </div>
-                            <a href="index.html#contact" class="w-full block text-center mt-4 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-2 rounded transition-colors">Request Quote / Inquiry</a>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 4 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=400" alt="Grandstream GXP1625" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">GXP1625 Basic IP Phone</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Standard 2-line business IP phone set with full PoE capability and premium HD audio clarity, optimal for mass agent workspace deployments.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 5 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=400" alt="Grandstream HT812 ATA" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">HandyTone HT812 Analog Telephone Adapter</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Powerful 2-port ATA converter allowing existing analog telephone endpoints to link into advanced VoIP SIP server node grids.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 6 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=400" alt="Grandstream GWN7660 AP" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">GWN7660 Wi-Fi 6 Access Point</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Enterprise-grade 2x2:2 MU-MIMO Wi-Fi 6 wireless node containing an embedded controller to support dense workplace cluster structures.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 7 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=400" alt="Grandstream GXV3370 Video Phone" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">GXV3370 IP Video Phone</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Smart Android executive phone with a 7-inch touch panel and a high-resolution camera node for real-time boardroom video conference tracking.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 8 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=400" alt="Grandstream UCM6308" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">UCM6308 High-Capacity IP PBX</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Massive unified server platform supporting up to 3000 concurrent users and 450 corporate video calls simultaneously.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 9 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=400" alt="Grandstream GWN7000 Router" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">GWN7000 Multi-WAN Gigabit Router</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Enterprise multi-WAN load-balancing firewall router node with hardware acceleration routing configurations for office complexes.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- BRAND 4: SYROTECH & RADWIN (9 Products) -->
             <div>
-                <div class="flex items-center space-x-3 mb-6 border-b pb-3 border-slate-200">
+                <div class="flex items-center space-x-3 mb-8 border-b pb-3 border-slate-200">
                     <span class="text-2xl font-bold text-brandDark">🧬 Syrotech & Radwin</span>
-                    <span class="text-xs text-slate-500 bg-slate-200/60 px-2.5 py-0.5 rounded-full font-medium">FTTH Optical & Sub-6 GHz Wireless Nodes</span>
+                    <span class="text-xs text-slate-500 bg-slate-200/60 px-2.5 py-0.5 rounded-full font-medium">FTTH Optical Fibers & Sub-6 GHz Backhaul Links</span>
                 </div>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Prod 1 -->
                     <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-                        <img src="https://images.unsplash.com/photo-1562408590-e32931084e23?q=80&w=400" alt="Syrotech 4 Port EPON OLT" class="w-full h-44 object-cover">
+                        <img src="https://images.unsplash.com/photo-1562408590-e32931084e23?q=80&w=400" alt="Syrotech 4 Port EPON OLT" class="w-full h-44 object-contain p-4 bg-slate-100">
                         <div class="p-4 flex-1 flex flex-col justify-between">
                             <div>
-                                <h3 class="font-bold text-brandDark text-base">Syrotech 4-Port EPON OLT</h3>
-                                <p class="text-xs text-slate-500 mt-1">Compact 1U rackmount Optical Line Terminal node optimizing FTTH high-bandwidth distributions with reliable long-range split ratio parameters.</p>
+                                <h3 class="font-bold text-brandDark text-sm">Syrotech 4-Port EPON OLT</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">1U rackmount Optical Line Terminal node optimizing FTTH high-bandwidth distributions with reliable long-range split ratio parameters.</p>
                             </div>
-                            <a href="index.html#contact" class="w-full block text-center mt-4 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-2 rounded transition-colors">Request Quote / Inquiry</a>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
                         </div>
                     </div>
+                    <!-- Prod 2 -->
                     <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-                        <img src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8b?q=80&w=400" alt="Syrotech dual band onu" class="w-full h-44 object-cover">
+                        <img src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8b?q=80&w=400" alt="Syrotech dual band onu" class="w-full h-44 object-contain p-4 bg-slate-100">
                         <div class="p-4 flex-1 flex flex-col justify-between">
                             <div>
-                                <h3 class="font-bold text-brandDark text-base">Syrotech Dual-Band XPON ONU</h3>
-                                <p class="text-xs text-slate-500 mt-1">High-performance optical network client unit supporting both GPON/EPON networks, configured with 1200Mbps dual-frequency Wi-Fi transmission nodes.</p>
+                                <h3 class="font-bold text-brandDark text-sm">Syrotech Dual-Band XPON ONU</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">High-performance optical network client router supporting GPON/EPON lines, configured with a 1200Mbps dual-frequency Wi-Fi system.</p>
                             </div>
-                            <a href="index.html#contact" class="w-full block text-center mt-4 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-2 rounded transition-colors">Request Quote / Inquiry</a>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
                         </div>
                     </div>
+                    <!-- Prod 3 -->
                     <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=400" alt="Radwin JET DUO Base Station" class="w-full h-44 object-cover">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=400" alt="Radwin JET DUO Base Station" class="w-full h-44 object-contain p-4 bg-slate-100">
                         <div class="p-4 flex-1 flex flex-col justify-between">
                             <div>
-                                <h3 class="font-bold text-brandDark text-base">Radwin JET DUO Base Station</h3>
-                                <p class="text-xs text-slate-500 mt-1">High-capacity sub-6 GHz dual-frequency beamforming base station node, engineered to deploy high-throughput multipoint backhaul operations without interference.</p>
+                                <h3 class="font-bold text-brandDark text-sm">Radwin JET DUO Base Station</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Ultra-capacity sub-6 GHz beamforming base station node, engineered to deploy lightning-fast multi-point backhaul topologies without interference.</p>
                             </div>
-                            <a href="index.html#contact" class="w-full block text-center mt-4 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-2 rounded transition-colors">Request Quote / Inquiry</a>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 4 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1562408590-e32931084e23?q=80&w=400" alt="Syrotech 8 Port GPON OLT" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">Syrotech 8-Port GPON OLT</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Higher capacity GPON central station node feeding up to 1024 downstream fiber lines with comprehensive SLA priority handling.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 5 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8b?q=80&w=400" alt="Syrotech 1GE ONU" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">Syrotech 1GE Secure ONU</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Ultra-compact single bridge fiber-to-the-home node, providing exceptional packet switching conversions for edge networks.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 6 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=400" alt="Radwin 2000 Alpha" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">Radwin 2000 Alpha PtP</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">High-grade outdoor link radio providing up to 500 Mbps continuous capacity throughput, ideal for CCTV camera video transport grids.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 7 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1562408590-e32931084e23?q=80&w=400" alt="Syrotech SFP Transceiver" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">Syrotech 10G SFP+ Optical Transceiver</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Premium single-mode fiber optical modules extending data reach parameters up to 20KM distance across city rings.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 8 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=400" alt="Radwin 5000 Jet" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">Radwin 5000 JET Point-to-Multipoint</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Premium beamforming smart antenna sector layout supplying absolute bandwidth consistency to widely dispersed enterprise client positions.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
+                        </div>
+                    </div>
+                    <!-- Prod 9 -->
+                    <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8b?q=80&w=400" alt="Syrotech PoE Switch" class="w-full h-44 object-contain p-4 bg-slate-100">
+                        <div class="p-4 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-brandDark text-sm">Syrotech 8-Port Fast PoE Switch</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Sturdy industrial 8-Port power-over-ethernet switch equipped with 2 Gigabit uplink slots for reliable field network connections.</p>
+                            </div>
+                            <a href="index.html#contact" class="w-full block text-center mt-3 bg-brandDark hover:bg-slate-800 text-white font-semibold text-xs py-1.5 rounded transition-colors">Request Quote / Inquiry</a>
                         </div>
                     </div>
                 </div>
@@ -207,6 +491,7 @@
         </div>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-brandDark text-slate-500 text-center py-8 border-t border-slate-800 text-xs mt-12">
         <div class="container mx-auto px-4">
             © 2026 World Network Solutions. All Rights Reserved. | B2B Commercial Distribution Portal
